@@ -1,0 +1,346 @@
+/*
+filename: style.css
+author: Your Name
+purpose: styles all pages for COS10032 Assignment 1
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #111111;
+}
+
+/* Top message bar */
+.topbar {
+    background-color: #138f1d;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6em;
+    font-weight: bold;
+}
+
+/* Header area */
+.branding {
+    background-color: #ffe100;
+    text-align: center;
+    padding: 1.2em;
+}
+
+.branding h1 {
+    font: bold 2.4em Arial, sans-serif;
+    margin-bottom: 0.2em;
+}
+
+.branding p {
+    font-weight: bold;
+}
+
+/* Navigation */
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+
+.menu li {
+    flex: 1;
+}
+
+.menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.menu a:hover
+{
+    background-color: #ffe100;
+    color: black;
+    transition: 0.3s;
+    transform: scale(1.05);
+    box-shadow: #111111 0px 4px 8px;
+}
+.menu a.active {
+    background-color: #ffe100;
+    color: #000000;
+}
+
+/* Home page hero */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 420px;
+    padding: 1.5em;
+    color: #ffffff;
+}
+
+.hero-text {
+    margin: 0 0 0 2em;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 2em 2em 2em 2em;
+    width: 48%;
+    min-width: 280px;
+    gap: 1em;
+}
+
+.hero-text h2 {
+    margin-bottom: 0.6em;
+}
+
+.hero-image {
+    width: 48%;
+    min-width: 280px;
+    margin: 0 0 0 2em;
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.8em 1.2em;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    background-color: #ffe100;
+    color: #000000;
+    transition: 0.3s;
+    transform: scale(1.05);
+    box-shadow: #111111 0px 4px 8px;
+}
+
+/* Cards */
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.card {
+    width: 30%;
+    min-width: 220px;
+    background-color: #ffffff;
+    margin: 1em;
+    padding: 1.2em;
+    border: 2px solid #d0d0d0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    transition: 0.3s;
+    border-color: #ffe100;
+}
+
+/* Topic page */
+.topic-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2em;
+    padding: 2em;
+    width: 100%;
+    overflow: auto;
+    min-width: none;
+    max-width: 100%;
+    margin: 0;
+    align-items: flex-start;
+}
+
+aside {
+    width: 30%;
+    background-color: #fff7b8;
+    border: 3px solid #d4aa00;
+    margin: 1em;
+    padding: 1em;
+}
+
+.content-area {
+    width: 65%;
+    background-color: #ffffff;
+    margin: 1em;
+    padding: 1.5em;
+}
+
+.content-area section {
+    margin-bottom: 1.5em;
+}
+
+.content-area h2 {
+    margin-bottom: 0.6em;
+}
+
+.content-area ol {
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+
+/* Figure */
+figure {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+figure img {
+    min-height: 200px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th,
+td {
+    border: 1px solid #333333;
+    padding: 0.8em;
+    text-align: left;
+}
+
+th {
+    background-color: #ffe100;
+}
+
+td {
+    background-color: #f7f7f7;
+}
+
+/* Quiz page */
+.quiz-page,
+.enhancements-page {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1.5em;
+}
+
+.quiz-page h2, .enhancements-page h2 {
+    margin-bottom: 1em;
+}
+
+fieldset {
+    margin-bottom: 1.2em;
+    padding: 1em;
+    border: 2px solid #cccccc;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    max-width: 420px;
+    padding: 0.6em;
+    margin-top: 0.4em;
+}
+
+.submit-area {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 0.8em 1.2em;
+    margin: 0.3em;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ffe100;
+    color: #000000;
+    transition: 0.3s;
+    transform: scale(1.05);
+    box-shadow: #111111 0px 4px 8px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    font-style: italic;
+    margin-top: 2em;
+    clear: both;
+}
+
+footer a {
+    color: #ffe100;
+    text-decoration: none;
+}
+
+/* Contextual selector example */
+nav ul li a {
+    letter-spacing: 0.3px;
+}
+
+/* Grouping selector example */
+h2, h3 {
+    color: #222222;
+}
+#home .card-section {
+    background-color: #ececec;
+}
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .hero,
+    .card-section,
+    .menu {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-image,
+    .card,
+    aside,
+    .content-area {
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+}

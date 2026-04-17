@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Quiz page about Cloud Computing">
+    <meta name="keywords" content="Cloud Computing quiz, web technology quiz">
+    <meta name="author" content="Your Name">
+    <title>Cloud Computing - Quiz</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="topbar">
+            Test your understanding of Cloud Computing.
+        </div>
+
+        <div class="branding">
+            <h1>Cloud Computing</h1>
+            <p>Understanding a modern web-related technology</p>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topic.html">Topic</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="enhancements.html">Enhancements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="quiz-page">
+        <h2>Cloud Computing Quiz</h2>
+
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <fieldset>
+                <legend>Student Details</legend>
+
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input
+                            type="text" 
+                            name="firstname" 
+                            id="firstname"
+                            maxlength="15"
+                            title="Please enter only alphabets (A-Z, a-z)"
+                            required pattern="[a-zA-Z]+"
+                            placeholder="eg. John"
+                    />
+                </p>
+
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input
+                            type="text"
+                            name="GivenName" 
+                            id="GivenName"
+                            maxlength="15"
+                            title="Please enter only alphabets (A-Z, a-z)"
+                            required pattern="[a-zA-Z]+"
+                            placeholder="eg. Samual"
+                    />
+                </p>
+
+                <p>
+                    <label for="studentid">Student ID:</label>
+                    <label for="StudentID">
+                        <input
+                            type="text"
+                            name="StudentID" 
+                            id="StudentID"
+                            minlength="7"
+                            maxlength="10"
+                            title="Please Enter between 7-10 digits"
+                            required pattern="\d*"
+                            placeholder="eg. 10000000"
+                        />
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 1 - Text Input</legend>
+                <p>
+                    <label for="q1">What does the word “cloud” mainly refer to in Cloud Computing?</label>
+                    <input type="text" id="q1" name="q1" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 2 - Radio Button</legend>
+                <p>Which service model provides ready-to-use online software?</p>
+                <p>
+                    <input type="radio" id="iaas" name="q2" value="IaaS" required>
+                    <label for="iaas">IaaS</label>
+                </p>
+                <p>
+                    <input type="radio" id="paas" name="q2" value="PaaS">
+                    <label for="paas">PaaS</label>
+                </p>
+                <p>
+                    <input type="radio" id="saas" name="q2" value="SaaS">
+                    <label for="saas">SaaS</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 3 - Checkboxes</legend>
+                <p>Which of the following are benefits of Cloud Computing?</p>
+                <p>
+                    <input type="checkbox" id="benefit1" name="q3_scalable" value="Scalable">
+                    <label for="benefit1">Scalable resources</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="benefit2" name="q3_access" value="Anywhere access">
+                    <label for="benefit2">Access from different devices</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="benefit3" name="q3_offline" value="Offline only">
+                    <label for="benefit3">Works only without internet</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 4 - Drop-down List</legend>
+                <p>
+                    <label for="q4">Which company is a major cloud provider?</label>
+                    <select id="q4" name="q4" required>
+                        <option value="">Please select</option>
+                        <option value="AWS">Amazon Web Services</option>
+                        <option value="Nintendo">Nintendo</option>
+                        <option value="Spotify">Spotify</option>
+                        <option value="Tesla">Tesla</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 5 - Number Input</legend>
+                <p>
+                    <label for="q5">How many main service models are commonly listed for Cloud Computing?</label>
+                    <input type="number" id="q5" name="q5" min="1" max="10" required>
+                </p>
+            </fieldset>
+
+            <p class="submit-area">
+                <input type="submit" value="Submit Quiz">
+                <input type="reset" value="Clear Form">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Website: <a href="https://www.swinburne.edu.au/">Swinburne University of Technology</a></p>
+    </footer>
+
+</body>
+</html>
